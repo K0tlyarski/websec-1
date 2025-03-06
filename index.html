@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="main_container">
+        <div class="flex_container" id="container">
+            <input type="text" class="textInput output" id="first">
+
+            <select class="selectInput output" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+
+            <input type="text" class="textInput output" id="second">
+        </div>
+
+        <div class="flex_container" id="container">
+            <button class="button output" onclick="buttonClick()">Подсчитать</button>
+        </div>
+
+        <div class="flex_container" id="container">
+            <div class="output" id="container">
+                <textarea class="textArea light_red" id="prev_result" readonly></textarea>
+                <textarea class="textArea" id="result" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
